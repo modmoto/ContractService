@@ -22,12 +22,6 @@ namespace ContractService.Controllers
     [Route("weather-forecast")]
     public class ContractController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult<List<Contract>> Get()
-        {
-            return new ActionResult<List<Contract>>(new List<Contract>());
-        }
-
         // TODO:
         // Sign Contract
         // No changes should be possible anymore when a contract is signed
