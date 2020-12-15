@@ -88,11 +88,6 @@ namespace ContractService.Controllers
         }
     }
 
-    internal class Profile
-    {
-        public double Max { get; set; }
-    }
-
     public class ContractUtils
     {
         public static bool ValidateAmount(double a, double m)
@@ -124,6 +119,11 @@ namespace ContractService.Controllers
 
             return b;
         }
+    }
+    
+    public class Profile
+    {
+        public double Max { get; set; }
     }
 
     public class Contract
