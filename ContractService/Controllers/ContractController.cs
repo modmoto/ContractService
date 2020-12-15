@@ -30,7 +30,7 @@ namespace ContractService.Controllers
 
         // TODO:
         // Sign Contract
-        // 
+        // No changes should be possible anymore when a contract is signed
         [HttpPost("Post")]
         public async Task<IEnumerable<Contract>> Post([FromBody] Contract c, string userId, int type, int years)
         {
