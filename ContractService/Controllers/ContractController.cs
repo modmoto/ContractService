@@ -22,9 +22,12 @@ namespace ContractService.Controllers
     [Route("weather-forecast")]
     public class ContractController : ControllerBase
     {
-        // TODO:
-        // Sign Contract
+        // Create a Contract:
+        // You are not allowed to create a contract where the contract amount exceeds the max limit of the profile. Each user has its own profile
+        //
+        // Sign Contract:
         // No changes should be possible anymore when a contract is signed
+
         [HttpPost("Post")]
         public async Task<IEnumerable<Contract>> Post([FromBody] Contract c, string userId, int type, int years)
         {
