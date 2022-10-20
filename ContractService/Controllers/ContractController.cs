@@ -26,7 +26,7 @@ namespace ContractService.Controllers
                 throw new Exception("not valid");
             }
 
-            var v1 = ContractUtils.ValidateAmount(c.ApplicantAdress, c.ApplicantName);
+            var v1 = ContractUtils.ValidateAdress(c.ApplicantAdress, c.ApplicantName);
             if (!v1)
             {
                 Console.WriteLine("invalid amount");
@@ -95,7 +95,7 @@ namespace ContractService.Controllers
             return b;
         }
 
-        public static bool ValidateAmount(string a, string b2)
+        public static bool ValidateAdress(string a, string b2)
         {
             bool b = false;
             if (a.Length > 50 && b2.Length > 500)
